@@ -1,0 +1,112 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* GLOBAL VARIABLE ========================================================================================== */
+:root {
+  /* Background Color */
+  --bg-button: #000000;
+  --bg-color: #ffffff;
+
+  /* Font Color */
+  --text-global-clr: hsl(0, 0%, 8%);
+  --text-button-clr: hsl(0, 0%, 100%);
+  --text-underline-clr: hsl(173, 52%, 53%);
+
+  /* Testing Colors */
+  --test-color-bg: hsl(0, 0%, 80%);
+  --test-color-border: hsl(0, 100%, 81%);
+
+  /* Box Shadows */
+  --nav-box-shadow: rgba(0, 0, 0, 0.09) 0px 2px 24px 0px;
+
+  /* Typography Fluid for h1 */
+  --h1-step-0: clamp(2.00rem, -1.50rem + 9.33vw, 5.50rem);
+
+  /* Typography Fluid for h3 */
+  --h3-step-0: clamp(0.94rem, 0.82rem + 0.48vw, 1.5rem);
+
+  /* Typography Fluid for Button */
+  --btn-step-0: clamp(1.00rem, 0.77rem + 0.97vw, 1.50rem)
+}
+
+/* GLOBAL CSS ========================================================================================== */
+.total-center {
+  text-align: center;
+  justify-content: center;
+}
+
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+body {
+  font-family: Poppins, sans-serif;
+  color: var(--text-global-clr);
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+u {
+  text-decoration-color: var(--text-underline-clr);
+}
+
+/* HERO SECTION CSS ========================================================================================== */
+
+.hero {
+  background: var(--bg-color);
+
+  margin-inline: auto;
+  padding: 8rem 0 5rem 0;
+  width: min(92%, 76rem);
+
+}
+
+.hero__job {
+  text-transform: uppercase;
+  font-weight: 500;
+  font-size: var(--h3-step-0);
+
+  margin: 0;
+}
+
+.hero__name {
+  text-transform: uppercase;
+  font-size: var(--h3-step-0);
+  font-weight: 700;
+}
+
+.hero__pitch {
+  font-size: var(--h1-step-0);
+  font-weight: 600;
+
+}
+
+.cta-project {
+  display: block;
+  width: min(60%, 16.25rem);
+
+  margin-bottom: 3rem;
+  padding: 1rem;
+
+  border: #000000 solid 1px;
+  background: var(--bg-button);
+  border-radius: 50px;
+
+  text-align: center;
+  color: var(--text-button-clr);
+  letter-spacing: 1px;
+  font-size: var(--btn-step-0);
+  font-weight: 400;
+}
+
+.hero__image {
+  width: min(100%, 75rem);
+}
